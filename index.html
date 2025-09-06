@@ -84,6 +84,26 @@
       left:50%;
       transform:translateX(-50%);
     }
+.mouth{
+      position:absolute;
+      top:140px;
+      left:50%;
+      transform:translateX(-50%);
+      width:60px;
+      height:36px;
+    }
+    .mouth::before, .mouth::after{
+      content:"";
+      position:absolute;
+      width:28px;
+      height:18px;
+      border-bottom:3px solid #000;
+      border-radius:0 0 30px 30px;
+      top:8px;
+    }
+    .mouth::before{ left:0; transform: translateX(-34px) rotate(-8deg); }
+    .mouth::after { right:0; transform: translateX(34px) rotate(8deg); }
+
 
 
 </style>    
